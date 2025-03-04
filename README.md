@@ -1,21 +1,23 @@
-# CRYPTOGRAPHY
-This directory contains simple implementations of some of the main cryptography algorithms.
+# Cryptography Algorithms
 
-I will add the algorithms as I code them.
+This repository contains simple, educational implementations of some of the most commonly used cryptographic algorithms. These implementations aim to demonstrate the inner workings of each algorithm but **should not** be used in production environments, as they are not designed with security in mind and may be vulnerable to known attacks.
 
-**NOTE:** These cryptographic implementations are just 'educational' implementations to show and understand how the algorithms work, but should not be used in 'serious' cryptographic environments, as these implementations could be subject to simple attacks (which I may code as well.. - e.g. timing attack on DES, [attack on RC4](https://link.springer.com/content/pdf/10.1007%2F3-540-45537-X_1.pdf)..).
+## Algorithms Implemented
 
-## Data Encryption Standard - DES
-Well-known symetric-key block cipher.
+### 1. **Data Encryption Standard (DES)**
+A well-known symmetric-key block cipher that has been widely used in the past but is now considered insecure for most purposes.
 
-## Diffie-Hellman Key Exchange
-Key exchange which can be used in IPsec, the TLS handshake and more.
+### 2. **Diffie-Hellman Key Exchange**
+An essential public-key cryptography algorithm used to securely exchange cryptographic keys over a public channel. It's foundational for protocols like IPsec, TLS, and SSH.
 
-## Feistel Cipher
-Block cipher used in other algorithms such as DES.
+### 3. **Feistel Cipher**
+A structure used in many block ciphers, including DES. The Feistel cipher divides the data block into two halves and processes them iteratively in rounds.
 
-## RC4
-Stream cipher used in WPA, WEP, TLS/SSL, Remote Desktop, ...
+### 4. **RC4**
+A stream cipher that has been widely used in various protocols like WPA, WEP, and TLS/SSL. It is now considered weak due to vulnerabilities discovered over time.
 
-## Vigenere and Ceasar Ciphers
-Elementary and easy-to-use ciphers.
+### 5. **Vigenère and Caesar Ciphers**
+Elementary and easy-to-understand ciphers used for text-based encryption. They are often used as teaching tools to introduce basic concepts of cryptography.
+
+## **Disclaimer**
+These implementations are **not** suitable for use in production systems. They are for educational purposes only, intended to help users understand how these algorithms work internally.
