@@ -1,6 +1,10 @@
-from Crypto.Cipher import AES
-from Crypto.Util.Padding import pad, unpad
-from Crypto.Random import get_random_bytes
+# Install dependencies
+# pip install pycryptodome
+# pip install crypto
+
+from Cryptodome.Cipher import AES
+from Cryptodome.Util.Padding import pad, unpad
+from Cryptodome.Random import get_random_bytes
 import os
 
 # PQC Key exchange (Kyber is an example here, adapt to actual PQC library)
